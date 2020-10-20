@@ -34,6 +34,8 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())  # ['rpythonprodjango.herokuapp.com']
 
+AUTH_USER_MODEL = 'base.User'
+
 # Application definition
 
 INSTALLED_APPS = [

@@ -41,7 +41,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     """
     App base User class.
 
-    Email and password are required. Other fields are optional.
+    Imail and password are required. Other fields are optional.
     """
 
     first_name = models.CharField(_('first name'), max_length=150, blank=True)

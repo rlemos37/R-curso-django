@@ -15,7 +15,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
 
-from coverage.annotate import os
+import os
 from decouple import config, Csv
 
 # from django.conf.urls import url

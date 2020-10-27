@@ -147,7 +147,7 @@ COLLECTFAST_ENABLED = False
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
-# STORAGE CONFIGUATTION IN S3 AWS
+# STORAGE CONFIGURATTION IN S3 AWS
 # -----------------------------------------------
 
 if AWS_ACCESS_KEY_ID:

@@ -19,7 +19,6 @@ django-s3-folder-storage = "*"
 collectfast = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
-django = "*"
 
 [requires]
 python_version = "3.8"

@@ -1,15 +1,16 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+  <link>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Python Pro</title>
 
     <meta name="description" content="Página do curso Python Pro">
     <meta name="author" content="Rone Lemos">
-
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 	<script src="{% static 'js/jquery.min.js' %}"></script>
@@ -32,13 +33,13 @@
   </div>
 </nav>
 
-    <div class="container-fluid">
+    <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="navbar-toggler-icon"></span>
-				</button> <a class="navbar-brand" href="#">Brand</a>
+				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
@@ -79,28 +80,31 @@
 			</nav>
 			<div class="jumbotron">
 				<h2>
-					Hello, world!
+					Curso de Python com Luciano Ramalho
 				</h2>
 				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+					Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro <a href="https://novatec.com.br/livros/pythonfluente/" target="_blank">Python
+                            Fluente</a>.
 				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
-				</p>
+
 			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="card">
 						<h5 class="card-header">
-							Card title
+							Mais detalhes sobre o instrutor
 						</h5>
 						<div class="card-body">
 							<p class="card-text">
-								Card content
+								<img src="{% static 'img/luciano-ramalho.png' %}" alt="Foto Luciano Ramalho" class="img-thumbnail float-left mr-3"/>
+								Luciano Ramalho é programador Python desde 1998, Fellow da Python Software Foundation;
+                            é sócio do Python.pro.br – uma empresa de treinamento –
+                            e cofundador do Garoa Hacker Clube, o primeiro hackerspace do Brasil e autor
+                            do livro <a href="https://novatec.com.br/livros/pythonfluente/" target="_blank">Python
+                            Fluente</a>.
 							</p>
 						</div>
-						<div class="card-footer">
-							Card footer
+
 						</div>
 					</div>
 				</div>
@@ -108,7 +112,30 @@
 		</div>
 	</div>
 </div>
+<footer class="main-footer mt-5 pt-4 text-light">
+    <div class="container">
+		<div class="row">
+			<div class="col">
+				<h3>Entre em contato</h3>
+				<address>
+					+55 12 997-411-854
+					<br/>
+					<a href="mailto:ramalho@python.pro.br" class="text-light">ramalho@python.pro.br</a>
+				</address>
+			</div>
+		</div>
+	</div>
+	<div class="rights pb-4 text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					{% now 'Y' %} Python Pro. Todos direitos reservados.
+				</div>
+			</div>
+		</div>
+	</div>
 
+</footer>
 
   </body>
 </html>
